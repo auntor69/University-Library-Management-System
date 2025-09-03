@@ -45,4 +45,3 @@
 </div>
 
 <?php include('footer.php') ?>
-<!-- Made by Vinit Shahdeo -->

@@ -5,7 +5,7 @@
 				</div>
       <div class="container">
 	  <div class="foot-margin">
-        <p><a></br>VIT University . All Rights Reserved. </a></p>
+        <p><a></br>East West University . All Rights Reserved. </a></p>
       </div>
       </div>
     </footer>

@@ -1,9 +1,21 @@
 <?php
-include('dbcon.php');
+include('dbcon.php'); // make sure this defines $conn as the mysqli connection
 
-$id=$_GET['id'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
-mysql_query("delete from users where user_id='$id'") or die(mysql_error());
+    // Prepare the statement to prevent SQL injection
+    $stmt = $conn->prepare("DELETE FROM users WHERE user_id = ?");
+    $stmt->bind_param("i", $id);
 
-header('location:users.php');
+    if ($stmt->execute()) {
+        $stmt->close();
+        header("Location: users.php");
+        exit();
+    } else {
+        echo "Error deleting user: " . $conn->error;
+    }
+} else {
+    echo "No user ID specified.";
+}
 ?>

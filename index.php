@@ -5,7 +5,14 @@
 			<div class="row">
 					<?php include('head.php'); ?>
 					
-					</div>The Central library spreads over to ground plus six floors with an area of 7770 sq.m. It is centrally air-conditioned, well-protected with fire alarm and CCTV surveillance. It has specialized collections of Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology, Humanities, Social Sciences and Management ranging from printed books, e-books, back volumes, CDs\ DVDs, video cassettes to audio cassettes. The Central Library subscribes to national and international journals in print and e-Journals. The library has a video conferencing facility and NPTEL video courses. Central Library is using LIBSYS ver7 software for Library Management and Information System Purpose and it has WEB-OPAC (Online Public Access Catalogue facility) to consult the Library Information. Also implemented the Radio Frequency Identification Technology (RFID) and self issue and return kiosks.
+					</div>The East West University Library, located at A/2 Jahurul Islam Avenue, Aftabnagar, Dhaka, 
+					is a pivotal academic resource center supporting the university's educational and research missions. Spanning approximately 11,000 square feet within the 
+					university's nine-story campus, the library offers a diverse collection of over 22,000 books, 135 print journals, and access to more than 3,300 online journals.
+					 Additionally, it subscribes to 16 national daily newspapers and houses approximately 1,500 multimedia resources, including CD-ROMs and audio cassettes. 
+					 The library is equipped with modern facilities such as a maps and journal area, a photocopy corner, a database search corner, and a newspaper display section.
+					  Each day, around 2,200 users engage with its resources. To facilitate efficient access, the library utilizes the LIBSYS ver7 software for library management 
+					  and offers a WEB-OPAC (Online Public Access Catalogue) for users to consult the library's information.
+					 The library is open on Sundays through Thursdays from 8:30 am to 10 pm, Fridays from 8:30 am to 5 pm, and Saturdays from 5 pm to 10 pm.
 					</br></br></br>
 				
 			
@@ -14,10 +21,6 @@
 			
 				</div>
 				<div class="span10">
-				
-				
-					
-					
 				
 				
 				</div>

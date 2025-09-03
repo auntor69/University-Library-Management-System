@@ -1,10 +1,18 @@
 <?php 
 include('dbcon.php');
 
-$id=$_GET['id'];
-$book_id = $_GET['book_id'];
+$id = mysqli_real_escape_string($connection, $_GET['id']);
+$book_id = mysqli_real_escape_string($connection, $_GET['book_id']);
 
-mysql_query("update borrow LEFT JOIN borrowdetails on borrow.borrow_id = borrowdetails.borrow_id   set borrow_status='returned',date_return= NOW() where borrow.borrow_id='$id' and borrowdetails.book_id = '$book_id'")or die(mysql_error());						
- header('location:view_borrow.php');
+$query = "UPDATE borrow 
+          LEFT JOIN borrowdetails ON borrow.borrow_id = borrowdetails.borrow_id
+          SET borrow_status='returned', date_return = NOW()
+          WHERE borrow.borrow_id='$id' AND borrowdetails.book_id='$book_id'";
 
-?>	
+if (mysqli_query($connection, $query)) {
+    header('Location: view_borrow.php');
+    exit();
+} else {
+    die("Error: " . mysqli_error($connection));
+}
+?>

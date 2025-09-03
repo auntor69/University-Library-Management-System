@@ -1,11 +1,8 @@
 
     <footer class="footer">
-				<div class="pull-center">
-				<img class="stilogo" src="../LMS/footer.png" class="img-rounded">
-				</div>
       <div class="container">
 	  <div class="foot-margin">
-        <p><a></br>VIT University . All Rights Reserved. Developed by <a href="https://facebook.com/vinit.shahdeo" target="_blank">Vinit Shahdeo</a></p>
+        <p><a></br>East West University . All Rights Reserved. Developed by <a href="https://facebook.com/jamshedauntor" target="_blank">Jamshed Rahman Auntor</a></p>
       </div>
       </div>
     </footer>

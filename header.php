@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>VIT Library</title>
+	<title>East West Library</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap -->
 			<link href="css/bootstrap.css" rel="stylesheet" media="screen">
@@ -43,5 +43,4 @@ $(function(){
 			</style>
 		</noscript>		
 </head>
-<!-- Made by Vinit Shahdeo -->
 <body>

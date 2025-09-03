@@ -1,18 +1,8 @@
-		<div class="span12">
-				<div class="header">
-				<div class="pull-left">
-				<img class="stilogo" src="LMS/vit.png" class="img-rounded">
-				</div>
-				</div>
+<div style="text-align: center;">
+    <img class="stilogo img-rounded" src="LMS/ewu.png" style="max-height:auto; width:auto;">
+</div>
+<div style="clear:both;"></div>
 
-					<center><div class="alert alert-info">Welcome to VIT University Library&nbsp;
-					
-					
-					
-	
-								
-							
-					</div></center>
-				
-					
-				</div>
+<center>
+    <div class="alert alert-info">Welcome to East West University Library&nbsp;</div>
+</center>

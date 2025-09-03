@@ -17,7 +17,7 @@
 	</tr>
 	<tr>
 	<td>Monday to Friday</td>
-	<td>8:00 a.m. to 12:30 a.m.</td>
+	<td>8:00 a.m. to 10:00 p.m.</td>
 	</tr>
 	<tr>
 	<td>Saturday and Sunday</td>
@@ -33,7 +33,7 @@
 	<td colspan="3"></td>
 	</tr>
 	<tr>
-	<td>Ms.Shreya Anand<br />Librarian </td>
+	<td>Mr. Mokles Mia<br />Librarian </td>
 	</tr>
 	
 	</tbody>

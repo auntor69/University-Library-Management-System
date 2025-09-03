@@ -14,9 +14,9 @@
 						</li>
 					</ul>
 <strong>Address</strong>
-<p>VIT University, Vellore - 632014, Tamil Nadu, India </p>
+<p>East West University, Aftabnagar - 1200, Dhaka, Bangladesh </p>
 <p>Telephone No. :</p>
-<p>0542-2361727</p>
+<p>01756211762</p>
 
 
 

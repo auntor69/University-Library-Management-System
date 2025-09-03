@@ -2,7 +2,7 @@
     <footer class="footer">
       <div class="container">
 	  <div class="foot-margin">
-        <p><a>PERIYAR EVR CENTRAL LIBRARY . VIT University . All Rights Reserved. </a></p>
+        <p><a>East West University Library . All Rights Reserved. </a></p>
       </div>
       </div>
     </footer>

@@ -1,18 +1,30 @@
-	<?php
-	if (isset($_POST['submit'])){
-	session_start();
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-	$result = mysql_query($query)or die(mysql_error());
-	$num_row = mysql_num_rows($result);
-		$row=mysql_fetch_array($result);
-		if( $num_row > 0 ) {
-			header('location:dashboard.php');
-	$_SESSION['id']=$row['user_id'];
-		}
-		else{ ?>
-	<div class="alert alert-danger">Access Denied</div>		
-	<?php
-	}}
-	?>
+<?php
+session_start();
+include('dbcon.php'); // Make sure $connection is your mysqli connection
+
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Prepare a statement to prevent SQL injection
+    $stmt = $connection->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+
+        // Check password (assuming passwords are stored hashed with password_hash)
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['id'] = $row['user_id'];
+            header('Location: dashboard.php');
+            exit;
+        } else {
+            echo '<div class="alert alert-danger">Access Denied: Wrong Password</div>';
+        }
+    } else {
+        echo '<div class="alert alert-danger">Access Denied: User Not Found</div>';
+    }
+}
+?>

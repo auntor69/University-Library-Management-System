@@ -1,6 +1,21 @@
 <?php
-include('dbcon.php');
-$id=$_GET['id'];
-mysql_query("update book set status = 'Archive' where book_id='$id'")or die(mysql_error());
-header('location:books.php');
+include('dbcon.php'); // Make sure $conn = new mysqli(...) is inside this file
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    // Use prepared statement
+    $stmt = $conn->prepare("UPDATE book SET status = 'Archive' WHERE book_id = ?");
+    $stmt->bind_param("i", $id);
+
+    if ($stmt->execute()) {
+        $stmt->close();
+        header("Location: books.php");
+        exit();
+    } else {
+        echo "Error updating book status: " . $conn->error;
+    }
+} else {
+    echo "No book ID provided.";
+}
 ?>
